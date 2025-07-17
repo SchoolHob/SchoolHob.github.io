@@ -1,0 +1,86 @@
+#people {
+    width: 640px;
+    height: 481px;
+    margin: 20px auto;
+    background: url(grass-cars-people.jpeg) no-repeat left top;
+    position: relative;
+}
+
+#bar {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding:5px;
+    letter-spacing: 0.2em;
+    text-shadow:0.15em 0.15em black;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 40px;
+}
+
+#forcast {
+    position: absolute;
+    text-transform: uppercase;
+    color: yellow;
+    text-shadow:0.15em 0.15em black;
+    top:20px;
+    left: 30px;
+}
+
+#forcast h1{
+    text-align: center;
+    font-size: xx-large;
+    margin-top: 10px;
+    color: rgb(250, 46, 70);
+}
+
+#forcast ul{
+    list-style: none;
+    margin-top: 80px;
+    margin-left: -50px;
+    line-height: 25px;
+}
+
+/* step like indentation */
+#forcast li:nth-child(1) {
+    margin-left: 0em;
+}
+#forcast li:nth-child(2) {
+    margin-left: 15em;
+}
+#forcast li:nth-child(3) {
+    margin-left: 30em;
+}
+
+#leader-board {
+    text-transform: uppercase;
+    color: rgb(245, 224, 201);
+    padding: 10px;
+    font-size: x-small;
+    text-shadow:0.1em 0.1em rgb(112, 192, 238);
+    border-radius: 15px;
+    border: 4px solid rgb(138, 183, 13);
+    position: absolute;
+    background-color: rgba(138, 216, 207, 0.7);
+
+    left: 10px;
+    bottom: 95px;
+}
+
+#leader-board h1 {
+    text-align: center;
+}
+
+#leader-board ol {
+    /* letter-spacing: 0.1vw; */
+    margin-left: -2.5em;
+    line-height: 20px;
+}
+
+
+body {
+    font-family: "Monaco", monospace;
+}
