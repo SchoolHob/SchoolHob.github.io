@@ -77,7 +77,8 @@ p {
 
 
 #red-ball{
-    background-color: crimson;
+    background-color: rgb(161, 208, 255);
+    box-shadow: 0 0 16px 6px rgba(255, 255, 255, 1);
     width: 20px;
     height:20px;
     border-radius: 50%;
