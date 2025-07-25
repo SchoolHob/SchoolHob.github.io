@@ -2,7 +2,9 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(39, 38, 70);
+    /* background-color: rgb(39, 38, 70); */
+    /* background-image: url("images/stars.jpg");
+    background-repeat: repeat; */
 }
 nav{
     height: 50vh;
