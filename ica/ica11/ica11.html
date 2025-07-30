@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .msgBox {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 242px;
+            background-color: #eee;
+        }
+
+        .msgBox p {
+            line-height: 1.5rem;
+            padding: 10px 20px;
+            color: #333;
+            background-position: 20px 0;
+            background-repeat: no-repeat;
+            background-size: 20px 20px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .msgBox button {
+            background: none;
+            border: none;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            font-size: 1.1rem;
+            color: #aaa;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        button.plain {
+            position: absolute;
+            top: 5%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+    </style>
+</head>
+<body>
+    <button class="plain">Open the Tressure Chest</button>
+    <script>
+        //alert("this is me BAbee");
+
+        const btn = document.querySelector("button").addEventListener("click", displayMessage);
+
+        function displayMessage() {
+            console.log("working");
+            const body = document.body;
+
+            // let msgText = "Hey David!";
+            // let msgType = "warning";
+            let msgText = prompt("Enter your message here");
+            let msgType = prompt("what kind of message is it (warning or chat)");
+
+            const panel = document.createElement("div");
+            panel.setAttribute("class", "msgBox");
+            body.appendChild(panel);
+
+            const msg = document.createElement("p");
+            msg.textContent = msgText;
+            panel.appendChild(msg);
+
+            const closeBtn = document.createElement("button");
+            closeBtn.textContent = "x";
+            panel.appendChild(closeBtn);
+
+            closeBtn.addEventListener("click", () => panel.parentNode.removeChild(panel));
+
+            if (msgType === "warning") {
+                msg.style.backgroundImage = "url(warning-pixel.png)";
+                panel.style.backgroundColor = "rgb(255, 70, 90)";
+                closeBtn.style.color = "white";
+                msg.style.color = "white";
+            } else if (msgType === "chat") {
+                msg.style.backgroundImage = "url(message-pixel.png)";
+                panel.style.backgroundColor = "rgb(120, 120, 225)";
+                closeBtn.style.color = "white";
+                msg.style.color = "white";
+            } else {
+                msg.style.padding = "20px";
+            }
+        }
+
+        //displayMessage();
+    </script>
+</body>
+</html>
