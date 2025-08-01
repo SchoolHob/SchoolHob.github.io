@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="wa12.css">
+    <title>The Twelveth Assignment</title>
+</head>
+<body>
+    <div class="app">
+        <header>Art Institute of Chicago Search</header>
+        <section class="image">
+          <img id="mainImage">
+        </section>
+        <section class="controls" >
+          <form id="art-search-form">
+            <input id="art-search-field" type="search" placeholder="Search for art">
+            <input class = "submit button" type="submit" value="Search">
+          </form>
+          <!-- <button type="button" id="js-btn-1" class="new-quote button">
+            Search 
+          </button> -->
+          <div class="next-prev">
+            <button type="button" id="next" class="cool button">
+              Next
+            </button>
+            <button type="button" id="prev" class="cool button">
+              Previous
+            </button>
+          </div>
+          <p id="image-count" class="count"></p>
+          <!-- <a class="answer button" id="js-tweet" target="_blank" rel="noreferrer">Show me the answer!</a> -->
+        </section>
+      </div>
+
+      <div class="description">
+        <p> <em>Created by Harrison Peña using the <a href= "https://api.artic.edu/docs/#introduction">Art Institute of Chicago API</a></em></p>
+        <p>
+          <br>I used the search functionality of the API and routed the user's text from a form into the API link. My code retrieves the resulting images and provides a way to 'scroll' through the results by selecting "Next" and "Previous" buttons. I also grabbed the associated color with the image through the API and used it to set the background color of the container element. The API offers many interesting details of the art such as mediums and variable length descriptions, if I had more time to work on this project I would like to implement this additional info in an apealing and informative way.</p>
+      </div>
+      <script src="real.js"></script>
+</body>
+</html>
