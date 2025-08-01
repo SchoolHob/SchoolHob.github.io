@@ -30,7 +30,7 @@ let maxImages = 1;
 
 async function searchImage(search){
      try {
-        const response1 = await fetch(endpoint + search + '?page=0&limit=100');
+        const response1 = await fetch(endpoint + search);
         if (!response1.ok) {
             throw Error(response1.statusText);
         }
