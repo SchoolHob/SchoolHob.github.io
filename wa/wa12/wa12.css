@@ -127,6 +127,7 @@ html {
     text-align: center;
     background-color: rgb(248, 245, 238);
     border-radius: 10px;
+    -webkit-appearance: none; /* add this */
 
   }
 
