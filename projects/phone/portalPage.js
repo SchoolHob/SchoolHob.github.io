@@ -12,7 +12,6 @@ loginBtn.addEventListener('click', attemptLogin);
 loginForm.addEventListener("submit", function(e) {
   e.preventDefault(); 
   attemptLogin();
-  loginForm.style.display;
   console.log("Login clicked");
 });
 
