@@ -107,6 +107,10 @@ closeBtn1.addEventListener('click', closePopup1);
 
 loginBtn.addEventListener('click', openPopup2);
 closeBtn2.addEventListener('click', closePopup2);
+portalBtn.addEventListener('click', () => {
+    window.location.href = 'portal.html';
+});
+
 
 function openPopup1() {
     popUp1.style.display = 'flex';

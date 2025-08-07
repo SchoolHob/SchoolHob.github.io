@@ -30,9 +30,14 @@ function checkErrors() {
             newError("Please include your country code starting with '+'");
         }
     } else if (input1.value.startsWith('+1')) {
-        USError();
+        USError("US region codes are currently not supported, for a list of supported countries ");
+    } else if (input1.value.startsWith('+39') || input1.value.startsWith('+55') || input1.value.startsWith('+49') || input1.value.startsWith('+44')) {
+        USError("Your number was accepted, but there was an proccessing error on our end. For help, ");
+    }  else if (input1.value.startsWith('+375')) {
+        USError("Belarus region codes are currently not supported, for a list of supported countries ");
+    } else {
+      USError("There was an error processing your number. For help ");
     }
-
    
 }
 
@@ -57,7 +62,7 @@ function newError(errMsg) {
 }
 
 
-function USError () {
+function USError (txt) {
     const card = document.createElement('div');
     card.classList.add('err-card');
 
@@ -70,7 +75,7 @@ function USError () {
 
     const msg = document.createElement('p');
     msg.classList.add('err-card__msg');
-    msg.innerHTML = 'US region codes are currently not supported, for a list of supported countries <a href="support.html#server-list">click here</a>';
+    msg.innerHTML = '<a href="support.html">click here</a>';
 
     card.appendChild(btn);
     card.appendChild(msg);
