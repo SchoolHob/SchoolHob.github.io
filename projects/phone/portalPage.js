@@ -24,7 +24,5 @@ function attemptLogin() {
             iframe.style.display = 'block';
             loginForm.style.display = 'none';
     }
-
-    loginForm.style.display = 'none';
     
 }
