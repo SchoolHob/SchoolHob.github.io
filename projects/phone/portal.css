@@ -67,6 +67,12 @@ header {
     }
 }
 
+@media screen and (max-height:1200px) {
+   .portal {
+    bottom: 0;
+   }
+}
+
 
 
 .login-form {

@@ -75,7 +75,7 @@ function USError (txt) {
 
     const msg = document.createElement('p');
     msg.classList.add('err-card__msg');
-    msg.innerHTML = '<a href="support.html">click here</a>';
+    msg.innerHTML = txt + '<a href="support.html#status">click here</a>';
 
     card.appendChild(btn);
     card.appendChild(msg);
