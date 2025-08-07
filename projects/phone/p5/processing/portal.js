@@ -15,8 +15,8 @@ function draw() {
   // background(random(360), 20, 95);
   // win.display();
   background (100, 150, 230);
-  // fill('brown');
-  // rect(30, 10, 150, 200);
+  fill(50, 50, 200);
+  rect(12, 43, 184, 128);
   fill(255, 255, 255);
   text("I intend on have the user navigate a file directory here and add their number to a system text file for completion.", 30, 10, 150, 200);
 
