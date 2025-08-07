@@ -15,13 +15,23 @@ function draw() {
   // background(random(360), 20, 95);
   // win.display();
   background (100, 150, 230);
+  // fill('brown');
+  // rect(30, 10, 150, 200);
+  fill(255, 255, 255);
+  text("I intend on have the user navigate a file directory here and add their number to a system text file for completion.", 30, 10, 150, 200);
+
+
   noStroke();
+  fill(0);
+  text ("make a new window", 10, 270);
   fill(color('tan'));
   rect (20, 200, 50, 50);
   for (let win of wins) {
     win.display();
     win.update();
   }
+
+  
 }
 
 function keyPressed() {
