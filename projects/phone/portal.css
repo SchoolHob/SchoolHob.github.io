@@ -39,7 +39,7 @@ header {
     border-radius: 20px;
     width: 600px;
     height: 600px;
-    display: none;
+    display: block;
 }
 
 @media screen and (max-width:600px) {
@@ -83,6 +83,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    display: flex;
 }
 .login-form input {
     font-family: monospace;
