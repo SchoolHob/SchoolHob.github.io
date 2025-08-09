@@ -20,8 +20,14 @@ loginForm.addEventListener("submit", function(e) {
 function attemptLogin() {
     if (usrField.value === 'clearviewadmin' &&
         pwField.value === 'gaxlyanblitz829') {
-            iframe.style.display = 'block';
-            loginForm.style.display = 'none';
+            acceptLogin();
     }
     
 }
+
+function acceptLogin() {
+  iframe.style.display = 'block';
+  loginForm.style.display = 'none';
+}
+
+acceptLogin();
