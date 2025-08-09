@@ -30,4 +30,3 @@ function acceptLogin() {
   loginForm.style.display = 'none';
 }
 
-acceptLogin();
